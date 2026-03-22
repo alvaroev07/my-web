@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fast Boost | Rocket League</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: black;
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+        url('https://images.unsplash.com/photo-1542751371-adc38448a05e');
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAV */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    z-index: 100;
+}
+
+.container-nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 34px;
+}
+
+/* DISCORD ICON */
+.discord-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.discord-icon img {
+    width: 30px;
+}
+
+/* HERO */
+.hero {
+    padding: 180px 20px 100px;
+    text-align: center;
+}
+
+.title-main {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 110px;
+    color: #d8b4fe;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto;
+    color: #ccc;
+}
+
+.cta {
+    padding: 16px 32px;
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* RANKS */
+.ranks {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+}
+
+.ranks p {
+    max-width: 700px;
+    margin: 20px auto 40px;
+    color: #ccc;
+}
+
+.rank-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.rank img {
+    width: 150px;
+}
+
+.rank p {
+    margin-top: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* ABOUT */
+.about {
+    padding: 120px 20px;
+}
+
+.block {
+    max-width: 900px;
+    margin: 120px auto;
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: all 1s ease;
+}
+
+.block.right {
+    transform: translateX(120px);
+    text-align: right;
+}
+
+.block.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.block h2, .block h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.block p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.block img {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 60px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<header class="navbar">
+    <div class="container-nav">
+        <div class="logo">FAST BOOST</div>
+
+        <!-- DISCORD -->
+        <a class="discord-icon" href="https://discord.gg/Qr5rQcqa" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+        </a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1 class="title-main">FAST BOOST</h1>
+    <p>Boosting profesional en Rocket League con jugadores de alto nivel.</p>
+    <a class="cta" href="https://discord.gg/Qr5rQcqa">Empezar ahora</a>
+</section>
+
+<section class="ranks">
+    <h2 class="section-title">Rocket League Experiencia</h2>
+
+    <p>
+        Contamos con un equipo de boosters profesionales, servicio rápido y precios negociables accesibles para cualquier persona.
+    </p>
+
+    <div class="rank-container">
+        <!-- CAMBIA ESTAS IMÁGENES POR LAS TUYAS -->
+        <div class="rank">
+            <img src="imagenes/ssl.png" alt="SSL">
+            <p>Supersonic Legend</p>
+        </div>
+
+        <div class="rank">
+            <img src="imagenes/gc.png" alt="GC">
+            <p>Grand Champion I</p>
+        </div>
+
+        <div class="rank">
+            <img src="imagenes/champ.png" alt="Champion">
+            <p>Champion I</p>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+
+    <div class="block reveal">
+        <h2>Mi Historia</h2>
+        <p>Soy una persona que ama los videojuegos. Llevo toda mi vida en este mundo, jugando, aprendiendo y mejorando constantemente.</p>
+        <img src="imagenes/fennec.png">
+    </div>
+
+    <div class="block right reveal">
+        <h3>¿Por qué una página de boosting?</h3>
+        <p>Siempre he ayudado a amigos a subir de rango. Ver cómo mejoran y disfrutan más del juego es algo que me llena.</p>
+        <img src="imagenes/octane.png">
+
+    <div class="block reveal">
+        <h3>Esto es solo el principio</h3>
+        <p>Fast Boost es el comienzo de algo grande. Este proyecto representa el inicio de un camino como desarrollador.</p>
+        <img src="imagenes/fennec.png">
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Fast Boost. All rights reserved.</p>
+    <p>No afiliado con Epic Games ni con Psyonix.</p>
+</footer>
+
+<script>
+const blocks = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        } else {
+            entry.target.classList.remove("active");
+        }
+    });
+}, { threshold: 0.2 });
+
+blocks.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
